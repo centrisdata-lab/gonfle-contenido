@@ -23,6 +23,7 @@ h3{margin:22px 0 8px;font-size:16px}
 .fila{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x mandatory}
 .fila figure{margin:0;flex:0 0 auto;scroll-snap-align:start}
 .fila img{height:420px;display:block;border:1px solid var(--linea);cursor:zoom-in}
+.fila video{height:420px;aspect-ratio:9/16;display:block;border:1px solid var(--linea);background:#000}
 figcaption{font-size:12px;color:var(--gris);margin-top:4px}
 .circulos{display:flex;gap:22px;flex-wrap:wrap}
 .circulos figure{margin:0;text-align:center}
@@ -43,7 +44,7 @@ td:first-child{white-space:nowrap;font-weight:600}
 .dl:hover{background:var(--tinta)}
 #visor{position:fixed;inset:0;background:rgba(20,16,30,.92);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
 #visor img{max-width:94vw;max-height:94vh}
-@media (max-width:600px){.fila img{height:300px}section{padding:16px}}
+@media (max-width:600px){.fila img,.fila video{height:300px}section{padding:16px}}
 </style>
 </head>
 <body>
@@ -52,7 +53,7 @@ td:first-child{white-space:nowrap;font-weight:600}
   <p>Material listo para Instagram, Facebook y WhatsApp Business · actualizado el 12 de noviembre de 2026 · clic en una imagen para verla grande</p>
   <nav>
     <a href="#perfil">Perfil</a><a href="#calendario">Calendario</a><a href="#anchetas">Carrusel anchetas</a>
-    <a href="#dolor">Carrusel puntos de dolor</a><a href="#brunch">Post brunch</a><a href="#guion">Guiones de video</a><a href="#faltan">Lo que falta</a>
+    <a href="#dolor">Carrusel puntos de dolor</a><a href="#brunch">Post brunch</a><a href="#video">Video promocional</a><a href="#guion">Guiones de video</a><a href="#faltan">Lo que falta</a>
   </nav>
 </header>
 <main>
@@ -97,7 +98,7 @@ td:first-child{white-space:nowrap;font-weight:600}
     <tr><td>Jue 12-11</td><td>Anchetas y cajas de regalo</td><td>Carrusel (4)</td></tr>
     <tr><td>Sáb 14-11</td><td>¿Diciembre te va a coger con los regalos sin pedir?</td><td>Carrusel (5)</td></tr>
     <tr><td>Lun 16-11</td><td>Brunch para la fiesta de fin de año</td><td>Post</td></tr>
-    <tr><td>Mié 18-11</td><td>Video promocional</td><td>Reel (pendiente)</td></tr>
+    <tr><td>Mié 18-11</td><td>Video promocional</td><td>Reel</td></tr>
     <tr><td>Vie 20-11</td><td>Anchetas y cajas con fotos reales</td><td>Carrusel (cuando María las mande)</td></tr>
   </table>
   <p class="nota" style="margin-top:12px">Historias: 3 o 4 por semana (repost de cada publicación, encuesta "¿Ya pediste los regalos de fin de año?", detrás de cámaras).</p>
@@ -149,6 +150,22 @@ Escríbenos por WhatsApp: enlace en el perfil.
 Cuéntanos la fecha y cuántas personas, y te enviamos la cotización por WhatsApp.
 
 #brunch #fiestadefindeaño #eventoscorporativos #medellin</div>
+</section>
+
+<section id="video">
+  <h2>Video promocional · Reel de fin de año</h2>
+  <div class="meta"><span><b>Publicar:</b> miércoles 18-11</span><span><b>Formato:</b> reel vertical 9:16, 25 segundos</span></div>
+  <p class="nota" style="margin-top:10px">Hay dos versiones con música distinta: elige una. La versión sin música sirve para agregarle después el audio de María o de Teo.</p>
+  <div class="fila">
+    <figure><video src="video/Gonfle-video-musica-decembrina.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>Música decembrina</figcaption><a class="dl" href="video/Gonfle-video-musica-decembrina.mp4" download="Gonfle-video-musica-decembrina.mp4">Descargar</a></figure>
+    <figure><video src="video/Gonfle-video-musica-pop-navideno.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>Música pop navideña</figcaption><a class="dl" href="video/Gonfle-video-musica-pop-navideno.mp4" download="Gonfle-video-musica-pop-navideno.mp4">Descargar</a></figure>
+    <figure><video src="video/Gonfle-video-sin-musica.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>Sin música (para la voz)</figcaption><a class="dl" href="video/Gonfle-video-sin-musica.mp4" download="Gonfle-video-sin-musica.mp4">Descargar</a></figure>
+  </div>
+  <div class="texto"><button class="copiar">Copiar</button>¿Diciembre te va a coger otra vez sin los regalos del equipo? Anchetas, cajas de regalo y brunch para la fiesta, armados a tu medida y a tu presupuesto.
+
+Pide tu cotización por WhatsApp: enlace en el perfil.
+
+#regaloscorporativos #anchetas #findeaño #brunch #medellin</div>
 </section>
 
 <section id="guion">
