@@ -1,0 +1,21 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>Copiar texto</title>
+<style>*{box-sizing:border-box}body{margin:0;font:18px/1.45 system-ui,sans-serif;background:#fff;color:#1e1630}
+#b{position:fixed;left:0;right:0;top:0;height:45vh;border:0;background:#eb0045;color:#fff;font:700 34px system-ui,sans-serif}
+#b.ok{background:#15803d}#t{margin:47vh 0 0;padding:16px 18px 40px;white-space:pre-wrap}#n{padding:0 18px;color:#6b6878;font-size:14px}</style></head>
+<body><button id="b">Copiar texto</button><div id="t"></div><div id="n"></div>
+<script>
+const T = {"2026-11-12-reel-valorados": "Tu equipo lo dio todo este año. Que el detalle de fin de año esté a la altura: regalos armados a tu gusto y un brunch para celebrar juntos.\n\nCotiza por WhatsApp: enlace en el perfil.\n\n#bienestarlaboral #regaloscorporativos #talentohumano #findeaño #medellin", "2026-11-13-carrusel-venta": "Cotiza hoy por WhatsApp las anchetas y cajas de regalo de fin de año para tu empresa: enlace en el perfil, escríbenos la palabra REGALOS.\n\nRegalos corporativos personalizados con tu marca, para empleados y clientes, con entrega en Medellín. Más de 10 años acompañando a las empresas.\n\n#anchetasmedellin #regaloscorporativos #anchetasempresariales #cajasderegalo #regalosdefindeaño"};
+const id = new URLSearchParams(location.search).get('id');
+const txt = T[id] || '';
+document.getElementById('t').textContent = txt || 'No hay texto con la clave ' + id;
+document.getElementById('n').textContent = id || '';
+document.getElementById('b').addEventListener('click', async () => {
+  const b = document.getElementById('b');
+  try { await navigator.clipboard.writeText(txt); }
+  catch (e) {  // respaldo para navegadores sin permiso de portapapeles
+    const a = document.createElement('textarea'); a.value = txt; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove();
+  }
+  b.textContent = 'Copiado'; b.classList.add('ok');
+});
+</script></body></html>
