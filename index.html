@@ -42,6 +42,16 @@ td:first-child{white-space:nowrap;font-weight:600}
 .lista{margin:0;padding-left:20px;font-size:14px}
 .dl{display:inline-block;margin-top:6px;font:600 12px Poppins,sans-serif;color:#fff;background:var(--rojo);padding:5px 10px;text-decoration:none}
 .dl:hover{background:var(--tinta)}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:14px}
+.tarjeta{margin:0;border:1px solid var(--linea);background:#fff;display:flex;flex-direction:column}
+.tarjeta img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;cursor:zoom-in}
+.tarjeta .c2{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tarjeta h4{margin:0;font-size:15px}
+.etapa{display:inline-block;font:600 11px Poppins,sans-serif;padding:3px 8px;color:#fff;background:var(--tinta)}
+.etapa.A{background:#b45309}.etapa.C{background:#1d4ed8}.etapa.V{background:#15803d}
+.tarjeta .texto{margin-top:0;font-size:13px;padding:34px 12px 12px;flex:1}
+.leyenda{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;margin:10px 0 0}
+.leyenda span{display:flex;align-items:center;gap:6px}
 #visor{position:fixed;inset:0;background:rgba(20,16,30,.92);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
 #visor img{max-width:94vw;max-height:94vh}
 @media (max-width:600px){.fila img,.fila video{height:300px}section{padding:16px}}
@@ -53,7 +63,7 @@ td:first-child{white-space:nowrap;font-weight:600}
   <p>Material listo para Instagram, Facebook y WhatsApp Business · actualizado el 12 de noviembre de 2026 · clic en una imagen para verla grande</p>
   <nav>
     <a href="#perfil">Perfil</a><a href="#calendario">Calendario</a><a href="#anchetas">Carrusel anchetas</a>
-    <a href="#dolor">Carrusel puntos de dolor</a><a href="#brunch">Post brunch</a><a href="#video">Video promocional</a><a href="#reel2">Reel corre-corre</a><a href="#guion">Guiones de video</a><a href="#faltan">Lo que falta</a>
+    <a href="#dolor">Carrusel puntos de dolor</a><a href="#brunch">Post brunch</a><a href="#video">Video promocional</a><a href="#reel2">Reel corre-corre</a><a href="#reels-nuevos">Reels nuevos</a><a href="#feed">Posts de feed</a><a href="#guion">Guiones de video</a><a href="#faltan">Lo que falta</a>
   </nav>
 </header>
 <main>
@@ -182,6 +192,144 @@ Pide tu cotización por WhatsApp: enlace en el perfil.
 #regaloscorporativos #anchetas #findeaño #brunch #medellin</div>
 </section>
 
+<!-- FEED:INICIO -->
+<section id="reels-nuevos">
+  <h2>Reels nuevos · dos enfoques distintos</h2>
+  <p class="nota">Hechos en HyperFrames, vertical 9:16, 21 segundos, con música y efectos de sonido. Los textos van sobre la pared o el fondo, nunca sobre los rostros. Las fotos son imágenes de referencia hechas con IA; quedan listas para cambiarlas por clips animados cuando Gemini libere cuota.</p>
+  <div class="fila">
+    <figure><video src="video/Gonfle-reel-un-solo-aliado.mp4" poster="video/portada-reel-aliado.jpg" controls playsinline preload="none"></video><figcaption>Reel A · "Un solo aliado"</figcaption><a class="dl" href="video/Gonfle-reel-un-solo-aliado.mp4" download="Gonfle-reel-un-solo-aliado.mp4">Descargar</a></figure>
+    <figure><video src="video/Gonfle-reel-valorados.mp4" poster="video/portada-reel-valorados.jpg" controls playsinline preload="none"></video><figcaption>Reel B · "Que se sientan valorados"</figcaption><a class="dl" href="video/Gonfle-reel-valorados.mp4" download="Gonfle-reel-valorados.mp4">Descargar</a></figure>
+  </div>
+  <h3>Reel A · el dolor de coordinar cinco proveedores</h3>
+  <div class="texto"><button class="copiar">Copiar</button>¿Cinco proveedores para una sola fiesta? Regalos, brunch, montaje e impresos con un solo aliado: una conversación, una cotización.
+
+Pide la tuya por WhatsApp: enlace en el perfil.
+
+#eventoscorporativos #regaloscorporativos #brunch #findeaño #medellin</div>
+  <h3>Reel B · el dolor de agradecer el año con un detalle genérico</h3>
+  <div class="texto"><button class="copiar">Copiar</button>Tu equipo lo dio todo este año. Que el detalle de fin de año esté a la altura: regalos armados a tu gusto y un brunch para celebrar juntos.
+
+Cotiza por WhatsApp: enlace en el perfil.
+
+#bienestarlaboral #regaloscorporativos #talentohumano #findeaño #medellin</div>
+  <h3>Video promocional · opciones de música no navideña</h3>
+  <p class="nota">El mismo video de fin de año con tres pistas alegres para escoger.</p>
+  <div class="fila">
+    <figure><video src="video/Gonfle-video-musica-E_acustica.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>E · Acústica feliz</figcaption><a class="dl" href="video/Gonfle-video-musica-E_acustica.mp4" download="Gonfle-video-musica-acustica.mp4">Descargar</a></figure>
+    <figure><video src="video/Gonfle-video-musica-F_funk.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>F · Funk retro</figcaption><a class="dl" href="video/Gonfle-video-musica-F_funk.mp4" download="Gonfle-video-musica-funk.mp4">Descargar</a></figure>
+    <figure><video src="video/Gonfle-video-musica-G_soul.mp4" poster="video/portada.jpg" controls playsinline preload="none"></video><figcaption>G · Soul de los 60</figcaption><a class="dl" href="video/Gonfle-video-musica-G_soul.mp4" download="Gonfle-video-musica-soul.mp4">Descargar</a></figure>
+  </div>
+</section>
+
+<section id="feed">
+  <h2>Posts de feed · 20 fotos que venden solas</h2>
+  <p class="nota">Como en la vista previa del feed de la propuesta: la foto muestra el producto y el texto va en la descripción. Cada una trae su texto para copiar y su etapa del embudo.</p>
+  <div class="leyenda"><span><i class="etapa A">Atraer</i> llega a gente nueva</span><span><i class="etapa C">Confianza</i> muestra cómo trabajamos</span><span><i class="etapa V">Venta</i> pide la cotización</span></div>
+  <div class="rejilla">
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f01-ancheta.jpg" alt="Anchetas navideñas" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Anchetas navideñas</h4><div class="texto"><button class="copiar">Copiar</button>Anchetas de fin de año armadas a tu gusto: tú eliges qué llevan y nosotros las dejamos listas para regalar.
+
+Cotiza las de tu equipo por WhatsApp: enlace en el perfil.
+
+#anchetas #regaloscorporativos #findeaño #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f01-ancheta.jpg" download="f01-ancheta.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f02-kit-logo.jpg" alt="Kit con tu logo" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Kit con tu logo</h4><div class="texto"><button class="copiar">Copiar</button>Tu marca en las manos de tu equipo todos los días. Kits con termo, mug, libreta y bolsa marcados con tu logo.
+
+Cuéntanos cuántos necesitas y te enviamos la cotización por WhatsApp.
+
+#merchandising #regaloscorporativos #kitdebienvenida #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f02-kit-logo.jpg" download="f02-kit-logo.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f03-brunch.jpg" alt="Brunch de cierre de año" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Brunch de cierre de año</h4><div class="texto"><button class="copiar">Copiar</button>La mesa lista y tú tranquilo. Brunch para el cierre de año de tu empresa.
+
+Dinos la fecha y cuántas personas: enlace de WhatsApp en el perfil.
+
+#brunch #eventoscorporativos #findeaño #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f03-brunch.jpg" download="f03-brunch.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f04-arco-carrera.jpg" alt="Arco inflable" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Arco inflable</h4><div class="texto"><button class="copiar">Copiar</button>Que la meta lleve tu marca. Arcos inflables para carreras, ferias y lanzamientos.
+
+¿Tienes un evento en camino? Escríbenos por WhatsApp.
+
+#inflables #arcoinflable #eventos #publicidad #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f04-arco-carrera.jpg" download="f04-arco-carrera.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f05-golpeadores.jpg" alt="Golpeadores en el estadio" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Golpeadores en el estadio</h4><div class="texto"><button class="copiar">Copiar</button>Así suena tu marca en la tribuna. Golpeadores inflables para estadios, conciertos y activaciones.
+
+Envíale esto a quien organiza el próximo evento de tu empresa.
+
+#inflables #activaciondemarca #btl #eventos</div><div><a class="dl" href="posts-feed/listas-para-subir/f05-golpeadores.jpg" download="f05-golpeadores.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f06-agendas-2027.jpg" alt="Agendas y calendarios 2027" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Agendas y calendarios 2027</h4><div class="texto"><button class="copiar">Copiar</button>El 2027 empieza en el escritorio de tus clientes. Agendas, cuadernos y calendarios con tu marca.
+
+Pídelos en noviembre para tenerlos antes de enero: cotiza por WhatsApp.
+
+#agendas2027 #impresos #regaloscorporativos #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f06-agendas-2027.jpg" download="f06-agendas-2027.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f07-armando-cajas.jpg" alt="Así se arma un regalo" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Así se arma un regalo</h4><div class="texto"><button class="copiar">Copiar</button>Así se arma un regalo corporativo: caja por caja, con lo que cada empresa eligió para su equipo.
+
+¿Qué le pondrías a la tuya?
+
+#regaloscorporativos #cajasderegalo #detrasdecamaras #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f07-armando-cajas.jpg" download="f07-armando-cajas.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f08-equipo-regalos.jpg" alt="El momento del regalo" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>El momento del regalo</h4><div class="texto"><button class="copiar">Copiar</button>El momento que vale todo el año: cuando tu equipo abre su regalo.
+
+Este diciembre, que se sientan valorados. Cotiza por WhatsApp: enlace en el perfil.
+
+#bienestarlaboral #regaloscorporativos #findeaño #talentohumano</div><div><a class="dl" href="posts-feed/listas-para-subir/f08-equipo-regalos.jpg" download="f08-equipo-regalos.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f09-exhibidor-pop.jpg" alt="Exhibidor de mostrador" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Exhibidor de mostrador</h4><div class="texto"><button class="copiar">Copiar</button>Tu producto, justo donde se decide la compra. Exhibidores de mostrador hechos a la medida de tu marca.
+
+Cuéntanos qué quieres exhibir y te proponemos el diseño.
+
+#materialpop #exhibidores #puntodeventa #publicidad</div><div><a class="dl" href="posts-feed/listas-para-subir/f09-exhibidor-pop.jpg" download="f09-exhibidor-pop.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/f10-gran-formato.jpg" alt="Backing para eventos" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Backing para eventos</h4><div class="texto"><button class="copiar">Copiar</button>Que tu evento se reconozca desde la entrada. Backing, pendones e impresos de gran formato con tu marca.
+
+Cotiza el montaje de tu evento por WhatsApp.
+
+#granformato #impresos #eventoscorporativos #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/f10-gran-formato.jpg" download="f10-gran-formato.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g01-regalo-cliente.jpg" alt="Regalo para clientes" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Regalo para clientes</h4><div class="texto"><button class="copiar">Copiar</button>Para ese cliente que no puede quedarse sin su detalle de fin de año.
+
+Regalos ejecutivos armados a tu gusto. Cotiza por WhatsApp: enlace en el perfil.
+
+#regalosejecutivos #regaloscorporativos #findeaño #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/g01-regalo-cliente.jpg" download="g01-regalo-cliente.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g02-carpa-inflable.jpg" alt="Carpa inflable" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Carpa inflable</h4><div class="texto"><button class="copiar">Copiar</button>Tu marca se ve desde lejos. Carpas inflables para ferias, lanzamientos y eventos al aire libre.
+
+¿Qué feria tienes el próximo año? Escríbenos.
+
+#inflables #ferias #publicidadexterior #eventos</div><div><a class="dl" href="posts-feed/listas-para-subir/g02-carpa-inflable.jpg" download="g02-carpa-inflable.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g03-gorras-camisetas.jpg" alt="Gorras y camisetas" loading="lazy"><div class="c2"><div><span class="etapa V">Venta</span></div><h4>Gorras y camisetas</h4><div class="texto"><button class="copiar">Copiar</button>Tu equipo, vestido con tu marca. Gorras y camisetas bordadas o estampadas con tu logo.
+
+Dinos cuántas necesitas y te cotizamos por WhatsApp.
+
+#dotacion #gorraspersonalizadas #merchandising #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/g03-gorras-camisetas.jpg" download="g03-gorras-camisetas.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g04-semana-salud.jpg" alt="Semana de la Salud" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Semana de la Salud</h4><div class="texto"><button class="copiar">Copiar</button>¿Ya planeaste la Semana de la Salud de tu empresa? Kits de bienestar con tu marca para que el mensaje se quede con tu equipo.
+
+Escríbenos y te mostramos opciones.
+
+#semanadelasalud #bienestarlaboral #sst #regaloscorporativos</div><div><a class="dl" href="posts-feed/listas-para-subir/g04-semana-salud.jpg" download="g04-semana-salud.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g05-sostenible.jpg" alt="Línea sostenible" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Línea sostenible</h4><div class="texto"><button class="copiar">Copiar</button>Regalos que cuidan tu marca y el planeta: bolsas reutilizables, libretas de corcho y papel semilla.
+
+Un detalle que se usa muchas veces, no una sola.
+
+#economiacircular #regalossostenibles #ecologico #regaloscorporativos</div><div><a class="dl" href="posts-feed/listas-para-subir/g05-sostenible.jpg" download="g05-sostenible.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g06-banderines.jpg" alt="Banderines y material de punto de venta" loading="lazy"><div class="c2"><div><span class="etapa C">Confianza</span></div><h4>Banderines y material de punto de venta</h4><div class="texto"><button class="copiar">Copiar</button>Cuando hay promoción, que se note desde la puerta. Banderines y material para vestir tu punto de venta.
+
+Cotiza tu campaña por WhatsApp.
+
+#materialpop #puntodeventa #banderines #publicidad</div><div><a class="dl" href="posts-feed/listas-para-subir/g06-banderines.jpg" download="g06-banderines.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g07-brunch-detalle.jpg" alt="Brunch de cerca" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Brunch de cerca</h4><div class="texto"><button class="copiar">Copiar</button>Un brunch se disfruta dos veces: cuando lo ves y cuando lo pruebas.
+
+Para la fiesta de fin de año de tu equipo: enlace de WhatsApp en el perfil.
+
+#brunch #catering #eventoscorporativos #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/g07-brunch-detalle.jpg" download="g07-brunch-detalle.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g08-activacion.jpg" alt="Activación de marca" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Activación de marca</h4><div class="texto"><button class="copiar">Copiar</button>Que la gente se detenga, juegue y recuerde tu marca. Activaciones con stand, ruleta y regalos para tu público.
+
+¿Dónde quieres que te vean? Escríbenos.
+
+#btl #activaciondemarca #eventos #publicidad</div><div><a class="dl" href="posts-feed/listas-para-subir/g08-activacion.jpg" download="g08-activacion.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g09-sombrillas.jpg" alt="Sombrillas con tu marca" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Sombrillas con tu marca</h4><div class="texto"><button class="copiar">Copiar</button>En Medellín siempre llueve en algún momento del día. Que cuando pase, tu marca esté ahí.
+
+Sombrillas marcadas con tu logo: cotiza por WhatsApp.
+
+#merchandising #sombrillas #regaloscorporativos #medellin</div><div><a class="dl" href="posts-feed/listas-para-subir/g09-sombrillas.jpg" download="g09-sombrillas.jpg">Descargar foto</a></div></div></figure>
+    <figure class="tarjeta"><img src="posts-feed/listas-para-subir/g10-pelotas-evento.jpg" alt="Pelotas gigantes" loading="lazy"><div class="c2"><div><span class="etapa A">Atraer</span></div><h4>Pelotas gigantes</h4><div class="texto"><button class="copiar">Copiar</button>El día de la familia de tu empresa, con tu marca saltando de mano en mano.
+
+Inflables para que el evento se recuerde. Escríbenos por WhatsApp.
+
+#inflables #diadelafamilia #eventosempresariales #bienestarlaboral</div><div><a class="dl" href="posts-feed/listas-para-subir/g10-pelotas-evento.jpg" download="g10-pelotas-evento.jpg">Descargar foto</a></div></div></figure>
+  </div>
+</section>
+<!-- FEED:FIN -->
+
 <section id="guion">
   <h2>Guiones del video de pauta</h2>
   <p class="nota">Basados en los dolores de quien compra en la empresa: dejarlo para última hora, regalar algo genérico, coordinar varios proveedores, presupuesto fijo y miedo a que no llegue a tiempo.</p>
@@ -225,7 +373,7 @@ document.querySelectorAll('.copiar').forEach(b => b.addEventListener('click', ()
   navigator.clipboard.writeText(t).then(() => { b.textContent = 'Copiado'; setTimeout(() => b.textContent = 'Copiar', 1500); });
 }));
 const visor = document.getElementById('visor');
-document.querySelectorAll('.fila img, .ancho img').forEach(i => i.addEventListener('click', () => {
+document.querySelectorAll('.fila img, .ancho img, .rejilla img').forEach(i => i.addEventListener('click', () => {
   visor.querySelector('img').src = i.src; visor.style.display = 'flex';
 }));
 visor.addEventListener('click', () => visor.style.display = 'none');
